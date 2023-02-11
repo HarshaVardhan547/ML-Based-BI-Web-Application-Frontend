@@ -8,6 +8,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import EDA from "./pages/EDA";
 import Insights from "./pages/Insights";
 import Navbarsales from "./components/Navbarsales";
+import { AuthProvider } from "./contexts/AuthContext";
+import Login from "./components/auth/Login";
+import PrivateRoute from "./components/auth/PrivateRoute";
+import ForgotPassword from "./components/auth/ForgotPassword";
+import UpdateProfile from "./components/auth/UpdateProfile";
+import Signup from "./components/auth/Signup";
 
 function App() {
   const menu = document.querySelector("#mobile-menu");
@@ -52,13 +58,54 @@ function App() {
     <>
       <Router>
         <Navbarsales />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/upload" element={<Upload />} />
-          <Route path="/eda" element={<EDA />} />
-          <Route path="/insights" element={<Insights />} />
-          <Route path="/datamodeling" element={<DataModeling />} />
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route
+              path="/upload"
+              element={
+                <PrivateRoute>
+                  <Upload />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/eda"
+              element={
+                <PrivateRoute>
+                  <EDA />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/insights"
+              element={
+                <PrivateRoute>
+                  <Insights />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/datamodeling"
+              element={
+                <PrivateRoute>
+                  <DataModeling />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/update-profile"
+              element={
+                <PrivateRoute>
+                  <UpdateProfile />
+                </PrivateRoute>
+              }
+            />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+          </Routes>
+        </AuthProvider>
       </Router>
     </>
   );
