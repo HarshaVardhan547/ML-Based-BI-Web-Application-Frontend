@@ -14,6 +14,7 @@ import PrivateRoute from "./components/auth/PrivateRoute";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import UpdateProfile from "./components/auth/UpdateProfile";
 import Signup from "./components/auth/Signup";
+import Navigationbar from "./components/Navigationbar";
 
 function App() {
   const menu = document.querySelector("#mobile-menu");
@@ -57,8 +58,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navbarsales />
         <AuthProvider>
+          <Navigationbar />
+          <Navbarsales />
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route
@@ -94,7 +96,7 @@ function App() {
               }
             />
             <Route
-              path="/update-profile"
+              path="/updateprofile"
               element={
                 <PrivateRoute>
                   <UpdateProfile />

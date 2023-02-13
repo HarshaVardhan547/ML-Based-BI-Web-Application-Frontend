@@ -9,7 +9,6 @@
 
 .navbarsales {
   background-color: #b1dbf9;
-  ;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -23,8 +22,7 @@
 }
 
 .nav-menu {
-  background-color: #b1dbf9;
-
+  background-color: #154c79;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -51,7 +49,7 @@
 
 .nav-text a {
   text-decoration: none;
-  color: #050505;
+  color: #fff;
   font-size: 18px;
   width: 95%;
   height: 100%;

@@ -1,10 +1,11 @@
 import React from "react";
 import "./Upload.css";
+import { ListOfFiles } from "../components/storage/ListAllFiles";
 
 function Upload() {
   return (
     <div className="upload">
-      <iframe src="http://localhost:8501/upload"></iframe>
+      <ListOfFiles />
     </div>
   );
 }

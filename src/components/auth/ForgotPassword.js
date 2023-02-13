@@ -28,7 +28,7 @@ export default function ForgotPassword() {
 
   return (
     <>
-      <div className="card ml-64">
+      <div className="card">
         <div className="card-body">
           <h2 className="text-center mb-4">Password Reset</h2>
           {error && (
@@ -63,10 +63,10 @@ export default function ForgotPassword() {
           <div className="w-100 text-center mt-3">
             <Link to="/login">Login</Link>
           </div>
+          <div className="w-100 text-center mt-2">
+            Need an account? <Link to="/signup">Sign Up</Link>
+          </div>
         </div>
-      </div>
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
       </div>
     </>
   );

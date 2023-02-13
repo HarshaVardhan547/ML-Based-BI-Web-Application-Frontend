@@ -34,7 +34,7 @@ export default function Signup() {
 
   return (
     <>
-      <div className="card ml-64">
+      <div className="card">
         <div className="card-body">
           <h2 className="text-center mb-4">Sign Up</h2>
           {error && (
@@ -79,9 +79,9 @@ export default function Signup() {
               Sign Up
             </button>
           </form>
-        </div>
-        <div className="w-100 text-center mt-2">
-          Already have an account? <Link to="/login">Log In</Link>
+          <div className="w-100 text-center mt-2">
+            Already have an account? <Link to="/login">Log In</Link>
+          </div>
         </div>
       </div>
     </>

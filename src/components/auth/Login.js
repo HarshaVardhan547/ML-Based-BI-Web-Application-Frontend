@@ -28,7 +28,7 @@ export default function Login() {
 
   return (
     <>
-      <div className="card ml-64">
+      <div className="card">
         <div className="card-body">
           <h2 className="text-center mb-4">Log In</h2>
           {error && (

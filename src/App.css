@@ -46,13 +46,13 @@
 }
 
 .navbar {
-  background: #16314c;
+  background: #154c79;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: sticky !important;
   top: 0;
   z-index: 999;
 }
@@ -740,8 +740,7 @@
 }
 
 .left {
-  background: url("../public/assets/Contact_us_image.jpeg")
-    no-repeat center;
+  background: url("../public/assets/Contact_us_image.jpeg") no-repeat center;
   background-size: cover;
   height: 100%;
 }

@@ -4,12 +4,6 @@ import * as MdIcons from "react-icons/md";
 
 export const SidebarData = [
   {
-    title: "Home",
-    path: "/",
-    icon: <AiIcons.AiFillHome />,
-    cName: "nav-text",
-  },
-  {
     title: "Upload",
     path: "/Upload",
     icon: <AiIcons.AiOutlineCloudUpload />,

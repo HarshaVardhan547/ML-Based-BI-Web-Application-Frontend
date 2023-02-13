@@ -91,10 +91,10 @@ export default function UpdateProfile() {
               Update
             </button>
           </form>
+          <div className="w-100 text-center mt-2">
+            <Link to="/">Cancel</Link>
+          </div>
         </div>
-      </div>
-      <div className="w-100 text-center mt-2">
-        <Link to="/">Cancel</Link>
       </div>
     </>
   );
