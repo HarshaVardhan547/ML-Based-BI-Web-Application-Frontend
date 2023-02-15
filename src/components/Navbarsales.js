@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-import "./Navbarsales.css";
 import { IconContext } from "react-icons";
 import { useLocation } from "react-router-dom";
 
 function Navbarsales() {
-  const [sidebar, setSidebar] = useState(true);
-
-  const showSidebar = () => setSidebar(!sidebar);
   const { pathname } = useLocation();
   if (
     pathname === "/" ||
@@ -20,15 +16,24 @@ function Navbarsales() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items">
-            <li className="navbarsales-toggle"></li>
+        <nav
+          className={
+            "lg:block fixed z-20 inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto w-48 pb-10 px-8 overflow-y-auto bg-gray-100"
+          }
+        >
+          <ul className="text-color-black mt-4">
+            <li className="text-sky-500 hover:text-blue-600"></li>
             {SidebarData.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
+                <li key={index}>
+                  <Link
+                    className={
+                      "group flex items-center lg:text-sm lg:leading-6 mb-4 font-semibold text-sky-500 hover:text-blue-600"
+                    }
+                    to={item.path}
+                  >
+                    <span className=""> {item.icon} </span>
+                    <span className="ml-2">{item.title}</span>
                   </Link>
                 </li>
               );

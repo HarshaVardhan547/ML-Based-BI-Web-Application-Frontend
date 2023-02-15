@@ -60,13 +60,12 @@ class Home extends React.Component {
                 <input type="text" className="field" placeholder="Phone" />
                 <textarea placeholder="Message" className="field"></textarea>
                 <button className="main__btn">
-                  <a href="#">Send</a>
+                  <a href="mailto:abhi.capstone1@gmail.com">Send</a>
                 </button>
               </div>
             </div>
           </div>
         </div>
-
         <div className="main" id="sign-up">
           <div className="main__container">
             <div className="main__content">
@@ -74,7 +73,9 @@ class Home extends React.Component {
               <h2>Sign Up Today</h2>
               <p>See what makes us different</p>
               <button className="main__btn">
-                <a href="#">Sign Up</a>
+                <Link href="#" to={"/signup"}>
+                  Sign Up
+                </Link>
               </button>
             </div>
             <div className="main__img--container">
@@ -84,7 +85,6 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-
         <div className="footer__container">
           <div className="footer__links">
             <div className="footer__link--wrapper">

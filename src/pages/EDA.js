@@ -1,9 +1,8 @@
 import React from "react";
-import "./Upload.css";
 
 function EDA() {
   return (
-    <div className="upload">
+    <div className="aspect-w-16 aspect-h-9">
       <iframe src="http://localhost:8501/EDA"></iframe>
     </div>
   );

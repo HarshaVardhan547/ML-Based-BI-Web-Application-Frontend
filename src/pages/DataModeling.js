@@ -1,12 +1,11 @@
 import React from "react";
-import "./Upload.css";
 
 function DataModeling() {
   return (
-    <div className="upload">
-    <iframe src="http://localhost:8501/prediction"></iframe>
-      </div>
+    <div className="aspect-w-16 aspect-h-9">
+      <iframe src="http://localhost:8501/prediction"></iframe>
+    </div>
   );
 }
 
-export default  DataModeling;
+export default DataModeling;
