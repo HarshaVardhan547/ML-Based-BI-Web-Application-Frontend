@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 import React, { useState, useEffect } from "react";
 
 export default function NavBarList() {

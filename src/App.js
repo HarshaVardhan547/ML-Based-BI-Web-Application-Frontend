@@ -7,14 +7,14 @@ import DataModeling from "./pages/DataModeling";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import EDA from "./pages/EDA";
 import Insights from "./pages/Insights";
-import Navbarsales from "./components/Navbarsales";
+import Navbarsales from "./components/NavBar/Navbarsales";
 import { AuthProvider } from "./contexts/AuthContext";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import UpdateProfile from "./components/auth/UpdateProfile";
 import Signup from "./components/auth/Signup";
-import Navigationbar from "./components/Navigationbar";
+import Navigationbar from "./components/NavBar/Navigationbar";
 
 function App() {
   const menu = document.querySelector("#mobile-menu");

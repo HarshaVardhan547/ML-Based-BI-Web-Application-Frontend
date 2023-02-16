@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ContactUs from "../components/ContactUs";
 
 class Home extends React.Component {
   render() {
@@ -49,23 +50,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="main" id="about">
-          <div className="container">
-            <div className="contact-box">
-              <div className="left"></div>
-              <div className="right">
-                <h2>Contact Us</h2>
-                <input type="text" className="field" placeholder="Your Name" />
-                <input type="text" className="field" placeholder="Your Email" />
-                <input type="text" className="field" placeholder="Phone" />
-                <textarea placeholder="Message" className="field"></textarea>
-                <button className="main__btn">
-                  <a href="mailto:abhi.capstone1@gmail.com">Send</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ContactUs />
         <div className="main" id="sign-up">
           <div className="main__container">
             <div className="main__content">
