@@ -188,7 +188,7 @@ a:hover {
 */
 
 .card {
-  @apply flex flex-col relative bg-white rounded border border-gray-300;
+  @apply flex flex-col bg-white rounded border border-gray-300;
 }
 
 .card-body {

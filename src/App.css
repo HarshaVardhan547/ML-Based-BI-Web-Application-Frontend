@@ -297,7 +297,6 @@
   border-radius: 4px;
   margin-top: 2rem;
   cursor: pointer;
-  position: relative;
   transition: all 0.35s;
   outline: none;
 }
@@ -640,7 +639,6 @@
 }
 
 .container {
-  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
