@@ -13,14 +13,22 @@ function ContactUs() {
       from_phone: yourPhone,
       message: message,
     };
-    emailjs.send().then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-      },
-      function (error) {
-        console.log("FAILED...", error);
-      }
-    );
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message Sent, We will get back to you shortly");
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
   }
   return (
     <div className="main" id="about">

@@ -18,7 +18,7 @@ function Navbarsales() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <nav
           className={
-            "lg:block fixed z-20 inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto w-48 pb-10 px-8 overflow-y-auto bg-gray-100"
+            "lg:block fixed z-20 inset-0 top-[3.8125rem] right-auto w-48 pb-10 px-8 overflow-y-auto bg-gray-100 left-0"
           }
         >
           <ul className="text-color-black mt-4">
