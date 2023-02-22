@@ -53,7 +53,7 @@ class Home extends React.Component {
         <ContactUs />
         <div className="main" id="sign-up">
           <div className="main__container">
-            <div className="main__content">
+            <div className="main__content text-center">
               <h1>Join Our Team</h1>
               <h2>Sign Up Today</h2>
               <p>See what makes us different</p>

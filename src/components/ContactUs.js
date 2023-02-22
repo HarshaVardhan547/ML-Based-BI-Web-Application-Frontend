@@ -31,7 +31,7 @@ function ContactUs() {
       );
   }
   return (
-    <div className="main" id="about">
+    <div className="main flex justify-center" id="about">
       <div className="container">
         <div className="contact-box">
           <div className="left"></div>
