@@ -16,7 +16,7 @@ export const SidebarData = [
     ),
   },
   {
-    title: "EDA",
+    title: "Exploratory Data Analysis",
     path: "/EDA",
     icon: (
       <IconContext.Provider
@@ -38,7 +38,7 @@ export const SidebarData = [
     ),
   },
   {
-    title: "DataModeling",
+    title: "Indvidual Customer Analysis",
     path: "/DataModeling",
     icon: (
       <IconContext.Provider

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ContactUs from "../components/ContactUs";
+import Services from "../components/Services";
 
 class Home extends React.Component {
   render() {
@@ -14,41 +15,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="services" id="services">
-          <h1>Our Services</h1>
-          <div className="services__wrapper">
-            <div className="services__card">
-              <img src="assets/sales.png" width="100%" height="60%" />
-              <h2>Sales Department</h2>
-
-              <div className="services__btn">
-                <button>
-                  <Link className="link_colour" to="/upload">
-                    Get Started
-                  </Link>
-                </button>
-              </div>
-            </div>
-            <div className="services__card">
-              <h2>Operations Department</h2>
-              <div className="services__btn">
-                <button>Get Started</button>
-              </div>
-            </div>
-            <div className="services__card">
-              <h2>Inventory</h2>
-              <div className="services__btn">
-                <button>Get Started</button>
-              </div>
-            </div>
-            <div className="services__card">
-              <h2>Workforce</h2>
-              <div className="services__btn">
-                <button>Get Started</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Services />
 
         <ContactUs />
         <div className="main" id="sign-up">
