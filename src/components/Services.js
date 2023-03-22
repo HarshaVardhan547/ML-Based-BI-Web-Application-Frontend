@@ -47,7 +47,7 @@ export default function Services() {
             </div>
           </div>
         </Link>
-        <Link className="link_colour" to="/Individual">
+        <Link className="link_colour" to="/DataModeling">
           <div className="services__card">
             <img
               src="assets/individual.png"
