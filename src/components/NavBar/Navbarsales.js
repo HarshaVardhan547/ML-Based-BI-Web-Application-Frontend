@@ -22,12 +22,12 @@ function Navbarsales() {
               <div className="flex justify-center px-4">
                 <div className="text-color-black mt-4">
                   <div className="text-sky-500 hover:text-blue-600"></div>
-                  <div className="hidden md:flex space-x-4 items-center px-4">
+                  <div className="md:flex space-x-4 items-center px-4">
                     {SidebarData.map((item) => {
                       return (
                         <Link
                           className={
-                            "flex items-center lg:text-lg lg:leading-6 mb-4 font-semibold text-sky-500 hover:text-blue-600"
+                            "flex items-center lg:text-lg lg:leading-6 mb-4 font-semibold"
                           }
                           to={item.path}
                         >
