@@ -4,7 +4,7 @@ function EDA() {
   return (
     <div className="aspect-w-16 aspect-h-16">
       <iframe
-        src="https://streamlit.metriverse.systems/EDA"
+        src="https://ml-bi-webapp.herokuapp.com/EDA"
         onLoad={() => {
           window.scrollTo(0, 0);
         }}
